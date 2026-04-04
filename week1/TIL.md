@@ -17,9 +17,10 @@
 내부 정렬 - display: flex;
 
 
-
-
 ### 3. 결과 이미지(스크린샷)
+<img width="1376" height="994" alt="image" src="https://github.com/user-attachments/assets/fd09b67e-165e-447a-9e42-8b0993bf600e" />
+
+
 <img width="375" height="806" alt="image" src="https://github.com/user-attachments/assets/8fd9312b-5d16-4216-afd0-3e761594059f" />
 <img width="394" height="805" alt="image" src="https://github.com/user-attachments/assets/6350f70e-af05-4336-bae6-8891d53f7679" />
 <img width="374" height="806" alt="image" src="https://github.com/user-attachments/assets/9f11e066-e77f-46e9-a481-ae02f01eac30" />
@@ -27,8 +28,5 @@
 
 
 
-
--
-
 ### 4. 느낀 점
--
+- 수행하며 생각보다 다양한 CSS 속성들이 많다는 것을 알 수 있었다. 직접 여러 번 사용해보면서 익숙해지는 과정이 필요함을 느껴, 앞으로 여러 코드를 적용해보며 자연스럽게 활용할 수 있는 수준까지 익혀나가고 싶다.
