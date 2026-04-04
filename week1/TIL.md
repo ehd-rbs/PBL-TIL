@@ -20,6 +20,10 @@
 
 
 ### 3. 결과 이미지(스크린샷)
+<img width="375" height="806" alt="image" src="https://github.com/user-attachments/assets/8fd9312b-5d16-4216-afd0-3e761594059f" />
+<img width="394" height="805" alt="image" src="https://github.com/user-attachments/assets/6350f70e-af05-4336-bae6-8891d53f7679" />
+<img width="374" height="806" alt="image" src="https://github.com/user-attachments/assets/9f11e066-e77f-46e9-a481-ae02f01eac30" />
+<img width="392" height="746" alt="image" src="https://github.com/user-attachments/assets/d8828a00-68c4-491d-bd64-4ccf12a26de4" />
 
 
 
