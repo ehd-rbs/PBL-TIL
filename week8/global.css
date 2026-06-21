@@ -1,0 +1,40 @@
+interface HeaderProps {
+  currentPage: string;
+  onChangePage: (page: string) => void;
+}
+
+function Header({ currentPage, onChangePage }: HeaderProps) {
+  return (
+    <header className="header">
+      <h1>아기 사자 명단</h1>
+
+      <nav>
+        <button
+          type="button"
+          onClick={() => onChangePage('home')}
+          className={currentPage === 'home' ? 'active' : ''}
+        >
+          홈
+        </button>
+
+        <button
+          type="button"
+          onClick={() => onChangePage('list')}
+          className={currentPage === 'list' ? 'active' : ''}
+        >
+          명단
+        </button>
+
+        <button
+          type="button"
+          onClick={() => onChangePage('form')}
+          className={currentPage === 'form' ? 'active' : ''}
+        >
+          추가
+        </button>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;

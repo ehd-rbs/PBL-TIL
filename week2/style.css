@@ -1,0 +1,173 @@
+
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: #e1e4e8;
+    margin: 60px 0;
+}
+
+
+.summary-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.summary-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+
+.my-card {
+    border: 3px solid #ff9d00;
+    box-shadow: 0 8px 20px rgba(255, 157, 0, 0.2);
+    transform: translateY(-5px); 
+}
+
+
+.profile-container {
+    position: relative; 
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4f;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.part {
+    color: #ff9d00;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+
+.detail-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail-card {
+    background: #fff;
+    border-left: 5px solid #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.detail-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.detail-part {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.detail-body {
+    margin: 20px 0;
+}
+
+.detail-body h4 {
+    margin: 15px 0 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.tech-list {
+    list-style: inside circle;
+    padding-left: 10px;
+}
+
+.contact-info {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.motto {
+    font-style: italic;
+    color: #555;
+    text-align: right;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 767px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .summary-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

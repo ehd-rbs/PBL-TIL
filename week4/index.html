@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아기 사자 명단</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>아기 사자 자기소개 명단</h1>
+
+      <div class="control-row">
+        <button id="toggleFormBtn">아기 사자 추가</button>
+        <button id="deleteLastBtn" class="danger">마지막 아기 사자 삭제</button>
+        <span id="countText" class="count-box">총 0명</span>
+      </div>
+
+      <div class="async-row">
+        <button id="addRandomOneBtn">랜덤 1명 추가</button>
+        <button id="addRandomFiveBtn">랜덤 5명 추가</button>
+        <button id="refreshAllBtn">전체 새로고침</button>
+        <span id="statusText" class="status-box ready">준비 완료</span>
+        <button id="retryBtn" class="retry" style="display:none;">재시도</button>
+      </div>
+
+      <div id="formPanel" class="form-panel">
+        <h2>아기 사자 추가 폼</h2>
+
+        <div class="form-row">
+          <label>
+            이름
+            <input id="nameInput" type="text" placeholder="예: 라이언" />
+          </label>
+
+          <label>
+            파트
+            <select id="partInput">
+              <option value="Frontend">Frontend</option>
+              <option value="Backend">Backend</option>
+              <option value="Design">Design</option>
+            </select>
+          </label>
+
+          <label>
+            한 줄 소개
+            <input id="summaryInput" type="text" placeholder="예: 씩씩한 아기 사자입니다." />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            상세 자기소개
+            <textarea id="detailInput" placeholder="자세한 자기소개를 입력하세요."></textarea>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <button id="fillRandomBtn" class="secondary">랜덤 값 채우기</button>
+          <button id="submitBtn">추가하기</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>보기 옵션</h2>
+
+      <div class="option-row">
+        <select id="partFilter">
+          <option value="All">전체</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Design">Design</option>
+        </select>
+
+        <select id="sortSelect">
+          <option value="latest">최신추가순</option>
+          <option value="name">이름순</option>
+        </select>
+
+        <input id="searchInput" type="text" placeholder="이름 검색" />
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>아기 사자 자기소개 요약 카드</h2>
+      <div id="summaryGrid" class="card-grid"></div>
+      <div id="summaryEmpty" class="empty-state" style="display:none;">
+        조건에 맞는 아기 사자가 없습니다.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>상세 자기소개 정보</h2>
+      <div id="detailList" class="detail-list"></div>
+      <div id="detailEmpty" class="empty-state" style="display:none;">
+        표시할 상세 정보가 없습니다.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
