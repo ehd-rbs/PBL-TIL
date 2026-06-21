@@ -13,6 +13,7 @@ GitHub 저장소와 Vercel을 연결하여 main 브랜치 push 시 자동 배포
 
 ### 3. 결과 이미지(스크린샷)
 - <img width="1490" height="946" alt="image" src="https://github.com/user-attachments/assets/5da90e63-42d4-4135-a9de-006c53535be9" />
+<img width="1919" height="992" alt="image" src="https://github.com/user-attachments/assets/40043320-06c0-4ec4-8850-2d24b0ecf412" />
 
 
 
